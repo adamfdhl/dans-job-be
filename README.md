@@ -4,3 +4,13 @@ API Service for job-dans.
 
 1. npm install (install all dependencies")
 2. nodemon index.js
+
+## ENDPOINTS
+
+### /jobs
+
+Get All Jobs
+
+### /jobs/:id
+
+Get job based on id
