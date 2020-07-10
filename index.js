@@ -25,7 +25,6 @@ app.get("/jobs", async (req, res) => {
 		const query = parsedQuery(req.query);
 		let url = `${GITHUB_URL}/positions.json`;
 		if (query) url += `?${query}`;
-		console.log(url);
 		const response = await axios.get(url);
 		res.send(response.data);
 	} catch (err) {
